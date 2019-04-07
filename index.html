@@ -38,7 +38,7 @@
 &nbsp;
 <br>
 
-	<p><font size="6">Test samples for three different systems</font></p>
+	<p><font size="4">Test samples for three different systems</font></p>
 
 
 <div class="btn-group btn-group-justified" role="group" aria-label="...">
@@ -101,6 +101,82 @@
 		
 
 </div>
+<section id="result">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Evaluation Result</h2>
+            <h3 class="section-subheading text-muted">Quantitative evaluation results of other algorithms and our method.</h3>
+            <table class="table table-bordered">
+              <tr style="font-size:120%">
+                <th></th>
+                <th scope="col">CSIG</th>
+                <th scope="col">CBAK</th>
+                <th scope="col">COVL</th>
+                <th scope="col">PESQ</th>
+                <th scope="col">SSNR</th>
+              </tr>
+              <tr>
+                <th scope="row" style="font-size:130%">Wiener(Scalart et al., 1996)</th>
+                <td>3.23</td>
+                <td>2.68</td>
+                <td>2.67</td>
+                <td>2.22</td>
+                <td>5.07</td>
+              </tr>
+              <tr>
+                <th scope="row" style="font-size:130%">SEGAN (Pascual et al., 2017)</th>
+                <td>3.48</td>
+                <td>2.94</td>
+                <td>2.80</td>
+                <td>2.16</td>
+                <td>7.73</td>
+              </tr>
+              <tr>
+                <th scope="row" style="font-size:130%">Wavenet (Rethage et al. 2017)</th>
+                <td>3.62</td>
+                <td>3.23</td>
+                <td>2.98</td>
+                <td>None</td>
+                <td>None</td>
+              </tr>
+              <tr>
+                <th scope="row" style="font-size:130%">MMSE-GAN(Soni et al.)</th>
+                <td>3.80</td>
+                <td>3.12</td>
+                <td>3.14</td>
+                <td>2.53</td>
+                <td>None</td>
+              </tr>
+              <tr>
+                <th scope="row" style="font-size:130%">Deep Feature Loss (Germain et al., 2018)</th>
+                <td>3.86</td>
+                <td>3.33</td>
+                <td>3.22</td>
+                <td>None</td>
+                <td>None</td>
+              </tr>
+              <tr>
+                <th style="font-size:130%">DCUnet-20</th>
+                <td>4.24</td>
+                <td>4.00</td>
+                <td>3.69</td>
+                <td>3.13</td>
+                <td>15.95</td>
+              </tr>
+              <tr style="font-weight:bold">
+                <th scope="row" style="font-size:130%">Large-DCUnet-20</th>
+                <td>4.34</td>
+                <td>4.10</td>
+                <td>3.81</td>
+                <td>3.24</td>
+                <td>16.85</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>											    
 </div>
 </center>
 	  </body>
