@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Speech Enhancement</title>
+	  
+	  
+    <!-- Bootstrap -->
+    <link href="
+        siplabiith.github.io/dist/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="siplabiith.github.io/dist/js/bootstrap.min.js"></script>
+<br>
+
+<center>
+
+<br>
+
+<div class="container">
+	<div class="boxtest_ref">
+	<h2 style="color:red;"><b><i>DNN Based Speech Enhancement Methods</i></b></h2>
+<br>
+&nbsp;
+<br>
+
+	<p><font size="5"><style="font-weight:bold">Test samples</font></p>
+
+
+
+<br>
+		
+		<table class="table">
+                  <tbody">
+                    <tr>
+		      <th class="align-middle">dB</th>
+                      <th class="align-middle">Name</th>
+		      <th class="align-middle">Clean</th>
+                      <th class="align-middle">Noisy</th>
+           	      <th class="align-middle">Spectral Magnitude Mask </th>
+                      <th class="align-middle">Spectral Regression</th>
+                      <th class="align-middle">Complex valued LSTM</th>
+                    </tr>
+		
+		 <tr>
+		
+		      <th style="font-size:120%" class="align-middle">2.5 </th>
+                      <td class="align-middle">p232_014.wav</td>
+                      <td><audio controls><source src="Clean/p232_014.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="Noisy/p232_014.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SMM/p232_014.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SERESNET/p232_014.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="CVLSTM/p232_014.wav" type="audio/mpeg"></audio></td>
+		    </tr>    
+		   
+		   
+		    <tr>
+		
+		      <th style="font-size:120%" class="align-middle"> </th>
+		      <td class="align-middle">p232_023.wav</td>
+                      <td><audio controls><source src="Clean/p232_023.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="Noisy/p232_023.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SMM/p232_023.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SERESNET/p232_023.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="CVLSTM/p232_023.wav" type="audio/mpeg"></audio></td>
+		      </tr>
+		    <tr>
+                    
+		      <th style="font-size:120%" class="align-middle"></th>														      
+                      <td class="align-middle">p257_183.wav</td>
+                      <td><audio controls><source src="Clean/p257_183.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="Noisy/p257_183.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SMM/p257_183.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SERESNET/p257_183.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="CVLSTM/p257_183.wav" type="audio/mpeg"></audio></td>
+		
+		    </tr>
+		      <tr>
+		
+		      <th style="font-size:120%" class="align-middle"> </th>
+		      <td class="align-middle">p257_391.wav</td>
+                      <td><audio controls><source src="Clean/p257_391.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="Noisy/p257_391.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SMM/p257_391.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SERESNET/p257_391.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="CVLSTM/p257_391.wav" type="audio/mpeg"></audio></td>
+                      
+		    </tr>
+		 <tr>
+		
+		      <th style="font-size:120%" class="align-middle">7.5 </th>
+                      <td class="align-middle">p232_003.wav</td>
+                      <td><audio controls><source src="Clean/p232_003.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="Noisy/p232_003.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SMM/p232_003.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SERESNET/p232_003.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="CVLSTM/p232_003.wav" type="audio/mpeg"></audio></td>
+		    </tr>    
+		   
+		   
+		    <tr>
+		
+		      <th style="font-size:120%" class="align-middle"> </th>
+		      <td class="align-middle">p232_013.wav</td>
+                      <td><audio controls><source src="Clean/p232_013.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="Noisy/p232_013.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SMM/p232_013.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SERESNET/p232_013.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="CVLSTM/p232_013.wav" type="audio/mpeg"></audio></td>
+		      </tr>
+		    <tr>
+                    
+		      <th style="font-size:120%" class="align-middle"></th>														      
+                      <td class="align-middle">p257_266.wav</td>
+                      <td><audio controls><source src="Clean/p257_266.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="Noisy/p257_266.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SMM/p257_266.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SERESNET/p257_266.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="CVLSTM/p257_266.wav" type="audio/mpeg"></audio></td>
+		    </tr>
+		      <tr>
+		
+		      <th style="font-size:120%" class="align-middle"> </th>
+		      <td class="align-middle">p257_262.wav</td>
+                      <td><audio controls><source src="Clean/p257_262.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="Noisy/p257_262.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SMM/p257_262.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SERESNET/p257_262.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="CVLSTM/p257_262.wav" type="audio/mpeg"></audio></td>
+                      
+		    </tr>
+		 <tr>
+		
+		      <th style="font-size:120%" class="align-middle">12.5 </th>
+                      <td class="align-middle">p232_002.wav</td>
+                      <td><audio controls><source src="Clean/p232_002.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="Noisy/p232_002.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SMM/p232_002.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SERESNET/p232_002.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="CVLSTM/p232_002.wav" type="audio/mpeg"></audio></td>
+		    </tr>    
+		   
+		   
+		    <tr>
+		
+		      <th style="font-size:120%" class="align-middle"> </th>
+		      <td class="align-middle">p232_007.wav</td>
+                      <td><audio controls><source src="Clean/p232_007.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="Noisy/p232_007.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SMM/p232_007.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SERESNET/p232_007.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="CVLSTM/p232_007.wav" type="audio/mpeg"></audio></td>
+		      </tr>
+		    <tr>
+                    
+		      <th style="font-size:120%" class="align-middle"></th>														      
+                      <td class="align-middle">p257_429.wav</td>
+                      <td><audio controls><source src="Clean/p257_429.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="Noisy/p257_429.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SMM/p257_429.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SERESNET/p257_429.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="CVLSTM/p257_429.wav" type="audio/mpeg"></audio></td>
+		    </tr>
+		      <tr>
+		
+		      <th style="font-size:120%" class="align-middle"> </th>
+		      <td class="align-middle">p257_433.wav</td>
+                      <td><audio controls><source src="Clean/p257_433.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="Noisy/p257_433.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SMM/p257_433.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SERESNET/p257_433.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="CVLSTM/p257_433.wav" type="audio/mpeg"></audio></td>
+                      
+		    </tr>
+		 <tr>
+		
+		      <th style="font-size:120%" class="align-middle">17.5 </th>
+                      <td class="align-middle">p232_006.wav</td>
+                     <td><audio controls><source src="Clean/p232_006.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="Noisy/p232_006.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SMM/p232_006.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SERESNET/p232_006.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="CVLSTM/p232_006.wav" type="audio/mpeg"></audio></td>
+		    </tr>    
+		   
+		   
+		    <tr>
+		
+		      <th style="font-size:120%" class="align-middle"> </th>
+		      <td class="align-middle">p232_011.wav</td>
+                      <td><audio controls><source src="Clean/p232_011.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="Noisy/p232_011.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SMM/p232_011.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SERESNET/p232_011.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="CVLSTM/p232_011.wav" type="audio/mpeg"></audio></td>
+		      </tr>
+		    <tr>
+                    
+		      <th style="font-size:120%" class="align-middle"></th>														      
+                      <td class="align-middle">p257_416.wav</td>
+                      <td><audio controls><source src="Clean/p257_416.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="Noisy/p257_416.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SMM/p257_416.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SERESNET/p257_416.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="CVLSTM/p257_416.wav" type="audio/mpeg"></audio></td>
+		    </tr>
+		      <tr>
+		
+		      <th style="font-size:120%" class="align-middle"> </th>
+		      <td class="align-middle">p257_424.wav</td>
+                      <td><audio controls><source src="Clean/p257_424.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="Noisy/p257_424.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SMM/p257_424.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="SERESNET/p257_424.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="CVLSTM/p257_424.wav" type="audio/mpeg"></audio></td>
+                      
+		    </tr>
+		
+                  
+		
+                  </tbody>
+                </table>
+	
+		
+</div>
+</center>
+	  </body>
+</html>
