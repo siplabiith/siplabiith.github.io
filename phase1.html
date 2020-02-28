@@ -1,1 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Speech Enhancement</title>
+	  	  
+    <!-- Bootstrap -->
+    <link href="
+        siplabiith.github.io/dist/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="siplabiith.github.io/dist/js/bootstrap.min.js"></script>
+<br>
+
+<center>
+
+<br>
+
+<div class="container">
+	<div class="boxtest_ref">
+	<h2 style="color:red;"><b><i>Significance of Phase in Speech Enhancement</i></b></h2>
+<br>
+&nbsp;
+<br>
+
+	<p><font size="5"><style="font-weight:bold">Test samples</font></p>
+
+
+
+<br>
+		
+		<table class="table">
+                  <tbody">
+                    <tr>
+		      <th class="align-middle">dB</th>
+                      <th class="align-middle">Name</th>
+                      <th class="align-middle">Noisy</th>
+		      <th class="align-middle">Enh_Mag_Noisy_Phase</th>
+           	      <th class="align-middle">Enh_mag_Clean_Phase</th>
+                      <th class="align-middle">CVLSTM</th>
+                    </tr>
+		
+		 <tr>
+		
+		      <th style="font-size:120%" class="align-middle">2.5 </th>
+                      <td class="align-middle">p232_032.wav</td>
+                      <td><audio controls><source src="noisy/p232_032.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="enh_mag_noisy_phase/232_032.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="enh_mag_clean_phase/p232_032.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="cvlstmp232_032.wav" type="audio/mpeg"></audio></td>
+		    </tr>    
+		   
+		   
+		
+		    <tr>
+		
+		      <th style="font-size:120%" class="align-middle"> </th>
+		      <td class="align-middle">p232_117.wav</td>
+                      <td><audio controls><source src="noisy/p232_117.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="enh_mag_noisy_phase/232_117.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="enh_mag_clean_phase/p232_117.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="cvlstmp232_117.wav" type="audio/mpeg"></audio></td>
+		    <tr>
+                    
+		      <th style="font-size:120%" class="align-middle"></th>														      
+                      <td class="align-middle">p232_246.wav</td>
+                      <td><audio controls><source src="noisy/p232_246.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="enh_mag_noisy_phase/232_246.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="enh_mag_clean_phase/p232_246.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="cvlstmp232_246.wav" type="audio/mpeg"></audio></td>
+                     
+		
+		    </tr>
+		      <tr>
+		
+		      <th style="font-size:120%" class="align-middle"> </th>
+		      <td class="align-middle">p232_263.wav</td>
+                      <td><audio controls><source src="noisy/p232_263.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="enh_mag_noisy_phase/232_263.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="enh_mag_clean_phase/p232_263.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="cvlstmp232_263.wav" type="audio/mpeg"></audio></td>
+                      
+		    </tr>
+		 <tr>
+		
+		      <th style="font-size:120%" class="align-middle"> </th>
+                      <td class="align-middle">p232_328.wav</td>
+                      <td><audio controls><source src="noisy/p232_328.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="enh_mag_noisy_phase/232_328.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="enh_mag_clean_phase/p232_328.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="cvlstmp232_328.wav" type="audio/mpeg"></audio></td>
+                      
+		    </tr>    
+		   
+		   
+		    <tr>
+                    
+		      <th style="font-size:120%" class="align-middle"></th>														      
+                      <td class="align-middle">p232_328.wav</td>
+                      <td><audio controls><source src="noisy/p232_328.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="enh_mag_noisy_phase/232_328.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="enh_mag_clean_phase/p232_328.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="cvlstmp232_328.wav" type="audio/mpeg"></audio></td>
+                      
+		    </tr>
+		      <tr>
+		
+		      <th style="font-size:120%" class="align-middle"> </th>
+		      <td class="align-middle">p257_009.wav</td>
+                      <td><audio controls><source src="noisy/p257_009.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="enh_mag_noisy_phase/257_009.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="enh_mag_clean_phase/p257_009.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="cvlstmp257_009.wav" type="audio/mpeg"></audio></td>
+                     
+                      
+		    </tr>
+		 <tr>
+		
+		      <th style="font-size:120%" class="align-middle"> </th>
+                      <td class="align-middle">p257_013.wav</td>
+                      <td><audio controls><source src="noisy/p257_013.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="enh_mag_noisy_phase/257_013.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="enh_mag_clean_phase/p257_013.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="cvlstmp257_013.wav" type="audio/mpeg"></audio></td>
+                      
+		    </tr>    
+		   
+		   
+		    <tr>
+		
+		      <th style="font-size:120%" class="align-middle"> </th>
+		      <td class="align-middle">p257_070.wav</td>
+                      <td><audio controls><source src="noisy/p257_070.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="enh_mag_noisy_phase/257_070.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="enh_mag_clean_phase/p257_070.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="cvlstmp257_070.wav" type="audio/mpeg"></audio></td>
+                      
+		      </tr>
+		    <tr>
+                    
+		      <th style="font-size:120%" class="align-middle"></th>														      
+                      <td class="align-middle">p257_094.wav</td>
+                      <td><audio controls><source src="noisy/p257_094.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="enh_mag_noisy_phase/257_094.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="enh_mag_clean_phase/p257_094.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="cvlstmp257_094.wav" type="audio/mpeg"></audio></td>
+                     
+		    </tr>
+		      
+		 <tr>
+		
+		      <th style="font-size:120%" class="align-middle"> </th>
+                      <td class="align-middle">p257_151.wav</td>
+                     <td><audio controls><source src="noisy/p257_151.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="enh_mag_noisy_phase/257_151.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="enh_mag_clean_phase/p257_151.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="cvlstmp257_151.wav" type="audio/mpeg"></audio></td>
+                    
+		    </tr>    
+		   
+		   
+		    <tr>
+		
+		      <th style="font-size:120%" class="align-middle"> </th>
+		      <td class="align-middle">p257_231.wav</td>
+                      <td><audio controls><source src="noisy/p257_231.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="enh_mag_noisy_phase/257_231.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="enh_mag_clean_phase/p257_231.wav" type="audio/mpeg"></audio></td>
+                      <td><audio controls><source src="cvlstmp257_231.wav" type="audio/mpeg"></audio></td>
+                      
+		      </tr>
+		  
+		    
+		  
+                  
+		
+                  </tbody>
+                </table>
+	
+		
+</div>
+</center>
+	  </body>
+</html>
 
