@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Speech Enhancement</title>
-	  
-	  
+	  	  
     <!-- Bootstrap -->
     <link href="
         siplabiith.github.io/dist/css/bootstrap.css" rel="stylesheet">
@@ -33,8 +33,7 @@
 
 <div class="container">
 	<div class="boxtest_ref">
-	<h2 style="color:red;"><b><i>PHASE AWARE SPEECH ENHANCEMENT USING REALISATION OF COMPLEX-VALUED LSTM</i></b></h2>
-
+	<h2 style="color:red;"><b><i>Prosody-CNN : A Non-Auto Regressive End-To-End Speech Synthesis Model With Prosody Modification</i></b></h2>
 <br>
 &nbsp;
 <br>
@@ -48,139 +47,149 @@
 		<table class="table">
                   <tbody">
                     <tr>
-		      <th class="align-middle">S. NO</th>
-                      <th class="align-middle">dB</th>
-		      <th class="align-middle">Noisy</th>
-                      <th class="align-middle">RCLSTM</th>
+                      <th class="align-middle">Parametric+WORLD</th>
+		      <th class="align-middle">Parametric+WaveNet</th>
+           	      <th class="align-middle">WaveNet</th>
+                      <th class="align-middle">Tacotron</th>
+                      <th class="align-middle">Prosody-CNN</th>
+
                     </tr>
 		
-		 <tr>
-		
-		      <th style="font-size:120%" class="align-middle">2.5 </th>
-                      <td class="align-middle">p232_014.wav</td>
-                      <td><audio controls><source src="noisy/p232_014.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls><source src="cvlstm/p232_014.wav" type="audio/mpeg"></audio></td>
-		    </tr>    
+		  <tr>
+     <td><audio controls><source src="page/para_world/02_merlin.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/para_wnet/02_mer+wn.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/wavenet/02_wavenet.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/tacotron/02_tacotron.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/prosody_cnn/02_prop.wav" type="audio/mpeg"></audio></td>
+		</tr>   
 		   
-		   
-		    <tr>
-		
-		      <th style="font-size:120%" class="align-middle"> </th>
-		      <td class="align-middle">p232_023.wav</td>
-                      <td><audio controls><source src="noisy/p232_023.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls><source src="cvlstm/p232_023.wav" type="audio/mpeg"></audio></td>
-		      </tr>
-		    <tr>
-                    
-		      <th style="font-size:120%" class="align-middle"></th>														      
-                      <td class="align-middle">p257_183.wav</td>
-                      <td><audio controls><source src="noisy/p257_183.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls><source src="cvlstm/p257_183.wav" type="audio/mpeg"></audio></td>
-		
-		    </tr>
-		      <tr>
-		
-		      <th style="font-size:120%" class="align-middle"> </th>
-		      <td class="align-middle">p257_391.wav</td>
-                      <td><audio controls><source src="noisy/p257_391.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls><source src="cvlstm/p257_391.wav" type="audio/mpeg"></audio></td>
-                      
-		    </tr>
-		 <tr>
-		
-		      <th style="font-size:120%" class="align-middle">7.5 </th>
-                      <td class="align-middle">p232_003.wav</td>
-                      <td><audio controls><source src="noisy/p232_003.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls><source src="cvlstm/p232_003.wav" type="audio/mpeg"></audio></td>
-		    </tr>    
-		   
-		   
-		    <tr>
-		
-		      <th style="font-size:120%" class="align-middle"> </th>
-		      <td class="align-middle">p232_013.wav</td>
-                      <td><audio controls><source src="noisy/p232_013.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls><source src="cvlstm/p232_013.wav" type="audio/mpeg"></audio></td>
-		      </tr>
-		    <tr>
-                    
-		      <th style="font-size:120%" class="align-middle"></th>														      
-                      <td class="align-middle">p257_266.wav</td>
-                      <td><audio controls><source src="noisy/p257_266.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls><source src="cvlstm/p257_266.wav" type="audio/mpeg"></audio></td>
-		    </tr>
-		      <tr>
-		
-		      <th style="font-size:120%" class="align-middle"> </th>
-		      <td class="align-middle">p257_262.wav</td>
-                      <td><audio controls><source src="noisy/p257_262.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls><source src="cvlstm/p257_262.wav" type="audio/mpeg"></audio></td>
-                      
-		    </tr>
-		 <tr>
-		
-		      <th style="font-size:120%" class="align-middle">12.5 </th>
-                      <td class="align-middle">p232_002.wav</td>
-                      <td><audio controls><source src="noisy/p232_002.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls><source src="cvlstm/p232_002.wav" type="audio/mpeg"></audio></td>
-		    </tr>    
-		   
-		   
-		    <tr>
-		
-		      <th style="font-size:120%" class="align-middle"> </th>
-		      <td class="align-middle">p232_007.wav</td>
-                      <td><audio controls><source src="noisy/p232_007.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls><source src="cvlstm/p232_007.wav" type="audio/mpeg"></audio></td>
-		      </tr>
-		    <tr>
-                    
-		      <th style="font-size:120%" class="align-middle"></th>														      
-                      <td class="align-middle">p257_429.wav</td>
-                      <td><audio controls><source src="noisy/p257_429.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls><source src="cvlstm/p257_429.wav" type="audio/mpeg"></audio></td>
-		    </tr>
-		      <tr>
-		
-		      <th style="font-size:120%" class="align-middle"> </th>
-		      <td class="align-middle">p257_433.wav</td>
-                      <td><audio controls><source src="noisy/p257_433.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls><source src="cvlstm/p257_433.wav" type="audio/mpeg"></audio></td>
-                      
-		    </tr>
-		 <tr>
-		
-		      <th style="font-size:120%" class="align-middle">17.5 </th>
-                      <td class="align-middle">p232_006.wav</td>
-                      <td><audio controls><source src="noisy/p232_006.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls><source src="cvlstm/p232_006.wav" type="audio/mpeg"></audio></td>
-		    </tr>    
-		   
-		   
-		    <tr>
-		
-		      <th style="font-size:120%" class="align-middle"> </th>
-		      <td class="align-middle">p232_011.wav</td>
-                      <td><audio controls><source src="noisy/p232_011.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls><source src="cvlstm/p232_011.wav" type="audio/mpeg"></audio></td>
-		      </tr>
-		    <tr>
-                    
-		      <th style="font-size:120%" class="align-middle"></th>														      
-                      <td class="align-middle">p257_416.wav</td>
-                      <td><audio controls><source src="noisy/p257_416.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls><source src="cvlstm/p257_416.wav" type="audio/mpeg"></audio></td>
-		    </tr>
-		      <tr>
-		
-		      <th style="font-size:120%" class="align-middle"> </th>
-		      <td class="align-middle">p257_424.wav</td>
-                      <td><audio controls><source src="noisy/p257_424.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls><source src="cvlstm/p257_424.wav" type="audio/mpeg"></audio></td>
-                      
-		    </tr>
-		
-                  
+		   <tr>
+     <td><audio controls><source src="page/para_world/03_merlin.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/para_wnet/03_mer+wn.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/wavenet/03_wavenet.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/tacotron/03_tacotron.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/prosody_cnn/03_prop.wav" type="audio/mpeg"></audio></td>
+		</tr>  
+		<tr>
+     <td><audio controls><source src="page/para_world/04_merlin.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/para_wnet/04_mer+wn.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/wavenet/04_wavenet.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/tacotron/04_tacotron.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/prosody_cnn/04_prop.wav" type="audio/mpeg"></audio></td>
+		</tr>  
+		<tr>
+     <td><audio controls><source src="page/para_world/05_merlin.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/para_wnet/05_mer+wn.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/wavenet/05_wavenet.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/tacotron/05_tacotron.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/prosody_cnn/05_prop.wav" type="audio/mpeg"></audio></td>
+		</tr>  
+		<tr>
+     <td><audio controls><source src="page/para_world/06_merlin.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/para_wnet/06_mer+wn.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/wavenet/06_wavenet.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/tacotron/06_tacotron.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/prosody_cnn/06_prop.wav" type="audio/mpeg"></audio></td>
+		</tr>  
+		<tr>
+     <td><audio controls><source src="page/para_world/07_merlin.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/para_wnet/07_mer+wn.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/wavenet/07_wavenet.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/tacotron/07_tacotron.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/prosody_cnn/07_prop.wav" type="audio/mpeg"></audio></td>
+		</tr>  
+		<tr>
+     <td><audio controls><source src="page/para_world/08_merlin.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/para_wnet/08_mer+wn.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/wavenet/08_wavenet.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/tacotron/08_tacotron.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/prosody_cnn/08_prop.wav" type="audio/mpeg"></audio></td>
+		</tr> 
+		<tr>
+     <td><audio controls><source src="page/para_world/09_merlin.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/para_wnet/09_mer+wn.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/wavenet/09_wavenet.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/tacotron/09_tacotron.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/prosody_cnn/09_prop.wav" type="audio/mpeg"></audio></td>
+		</tr> 
+		<tr>
+     <td><audio controls><source src="page/para_world/10_merlin.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/para_wnet/10_mer+wn.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/wavenet/10_wavenet.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/tacotron/10_tacotron.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/prosody_cnn/10_prop.wav" type="audio/mpeg"></audio></td>
+		</tr>
+		<tr>
+     <td><audio controls><source src="page/para_world/11_merlin.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/para_wnet/11_mer+wn.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/wavenet/11_wavenet.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/tacotron/11_tacotron.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/prosody_cnn/11_prop.wav" type="audio/mpeg"></audio></td>
+		</tr> 
+		<tr>
+     <td><audio controls><source src="page/para_world/12_merlin.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/para_wnet/12_mer+wn.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/wavenet/12_wavenet.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/tacotron/12_tacotron.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/prosody_cnn/12_prop.wav" type="audio/mpeg"></audio></td>
+		</tr> 
+		<tr>
+     <td><audio controls><source src="page/para_world/13_merlin.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/para_wnet/13_mer+wn.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/wavenet/13_wavenet.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/tacotron/13_tacotron.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/prosody_cnn/13_prop.wav" type="audio/mpeg"></audio></td>
+		</tr>  
+		<tr>
+     <td><audio controls><source src="page/para_world/14_merlin.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/para_wnet/14_mer+wn.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/wavenet/14_wavenet.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/tacotron/14_tacotron.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/prosody_cnn/14_prop.wav" type="audio/mpeg"></audio></td>
+		</tr> 
+		<tr>
+     <td><audio controls><source src="page/para_world/15_merlin.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/para_wnet/15_mer+wn.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/wavenet/15_wavenet.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/tacotron/15_tacotron.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/prosody_cnn/15_prop.wav" type="audio/mpeg"></audio></td>
+		</tr>
+		<tr>
+     <td><audio controls><source src="page/para_world/16_merlin.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/para_wnet/16_mer+wn.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/wavenet/16_wavenet.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/tacotron/16_tacotron.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/prosody_cnn/16_prop.wav" type="audio/mpeg"></audio></td>
+		</tr> 
+		<tr>
+     <td><audio controls><source src="page/para_world/17_merlin.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/para_wnet/17_mer+wn.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/wavenet/17_wavenet.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/tacotron/17_tacotron.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/prosody_cnn/17_prop.wav" type="audio/mpeg"></audio></td>
+		</tr>  
+		<tr>
+     <td><audio controls><source src="page/para_world/18_merlin.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/para_wnet/18_mer+wn.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/wavenet/18_wavenet.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/tacotron/18_tacotron.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/prosody_cnn/18_prop.wav" type="audio/mpeg"></audio></td>
+		</tr>  
+		<tr>
+     <td><audio controls><source src="page/para_world/19_merlin.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/para_wnet/19_mer+wn.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/wavenet/19_wavenet.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/tacotron/19_tacotron.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/prosody_cnn/19_prop.wav" type="audio/mpeg"></audio></td>
+		</tr>  
+		<tr>
+     <td><audio controls><source src="page/para_world/20_merlin.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/para_wnet/20_mer+wn.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/wavenet/20_wavenet.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/tacotron/20_tacotron.wav" type="audio/mpeg"></audio></td>
+     <td><audio controls><source src="page/prosody_cnn/20_prop.wav" type="audio/mpeg"></audio></td>
+		</tr>  
+		    
 		
                   </tbody>
                 </table>
